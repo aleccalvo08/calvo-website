@@ -131,5 +131,69 @@ body {
         letter-spacing: -1.45px;
       }
     }
+    .ui-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 250px 0;
+
+      &__illustration {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        margin-right: 65px;
+
+        &-svg{
+          width: 412px;
+        }
+      }
+
+      &__info {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+        margin-left: 65px;
+        font-family: $montserrat;
+
+        &__title {
+          width: 100%;
+          font-size: 42px;
+          font-weight: 600;
+          letter-spacing: 10.80px;
+
+        }
+
+        &__desc {
+          width: 400px;
+          margin: 20px 0;
+          font-size: 12px;
+          font-weight: 100;
+          letter-spacing: .5px;
+          line-height: 30px;
+          width: 400px;
+        }
+
+        &__cta {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-top: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 5px;
+
+          &-svg {
+            width: 35px;
+            margin-right: 25px;
+          }
+
+          &-link {
+            color: $orange;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }
