@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.6 74.6">
+  <defs>
+    <style>
+      .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:.75px}
+    </style>
+  </defs>
+  <g id="drawing-icon" data-name="drawing icon">
+    <g id="drawing-icon-2" data-name="drawing icon 2">
+      <path class="cls-1" transform="rotate(-45 37.298 35.87)" d="M25.74 31.87h23.11v8H25.74z"/>
+      <path class="cls-1" d="M49.93 28.9l-5.66-5.66L45.54 22a1 1 0 0 1 1.42.18l4 4.05a1 1 0 0 1 .18 1.42zM24.36 48.81l5.34-.94-4.4-4.4-.94 5.34z"/>
+      <path class="cls-1" transform="rotate(45 37.3 37.3)" d="M11.3 11.3h52v52h-52z"/>
+    </g>
+  </g>
+</svg>

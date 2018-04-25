@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.6 74.6">
+  <defs>
+    <style>
+      .cls-1{fill:#fff;fill-rule:evenodd}
+    </style>
+  </defs>
+  <g id="ae-icon" data-name="ae icon">
+    <g id="ae-icon-2" data-name="ae icon 2">
+      <path class="cls-1" d="M33.24 30.7h-3.88l-4 12.86h3.07l.93-3.3h3.75l1 3.3h3.19zm-3.45 7.38l.77-2.73c.22-.74.41-1.71.61-2.48.2.77.43 1.72.66 2.48l.82 2.73zM47.16 38.68c0-2.31-1.16-4.68-4.23-4.68a4.71 4.71 0 0 0-4.8 5c0 2.92 1.85 4.75 5.07 4.75a9.58 9.58 0 0 0 3.44-.57l-.39-2a8.76 8.76 0 0 1-2.62.38c-1.38 0-2.58-.58-2.68-1.78h6.11a6.58 6.58 0 0 0 .1-1.1zm-6.23-.84A1.91 1.91 0 0 1 42.75 36a1.69 1.69 0 0 1 1.67 1.89z"/>
+      <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".75" d="M37.3.53L74.07 37.3 37.3 74.07.53 37.3z"/>
+    </g>
+  </g>
+</svg>

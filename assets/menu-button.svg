@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.85 60.85">
+  <defs>
+    <style>
+      .cls-3{fill:#fff}
+    </style>
+  </defs>
+  <g id="menu-button" data-name="menu button">
+    <g id="menu-button-2" data-name="menu button 2">
+      <path stroke="#fff" stroke-miterlimit="10" stroke-width="1.52" fill="none" d="M.76.76h59.32v59.32H.76z"/>
+      <path fill="none" d="M.76.76h59.32v59.32H.76z"/>
+      <path class="cls-3" d="M16.86 14.11h2.27l2.52 4.05 2.52-4.05h2.27v9.58h-2.08v-6.26l-2.69 4.1h-.06l-2.67-4.05v6.21h-2.08zM36.34 14.11h7.22V16h-5.14v1.95h4.52v1.85h-4.52v2h5.21v1.88h-7.29zM16.81 33.88h1.94l4.49 5.9v-5.9h2.08v9.58h-1.79l-4.64-6.09v6.09h-2.08zM39.22 43.62a3.8 3.8 0 0 1-4.15-4.26v-5.48h2.11v5.42a2.53 2.53 0 0 0 .55 1.78 2 2 0 0 0 1.51.59 2 2 0 0 0 1.52-.57 2.41 2.41 0 0 0 .55-1.73v-5.49h2.11v5.41a5.71 5.71 0 0 1-.29 1.9 3.58 3.58 0 0 1-.85 1.35 3.42 3.42 0 0 1-1.32.81 5.29 5.29 0 0 1-1.74.27z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.6 74.6">
+  <defs>
+    <style>
+      .cls-1{fill:#fff;fill-rule:evenodd}
+    </style>
+  </defs>
+  <g id="ai-icon_2" data-name="ai icon">
+    <g id="ai-icon-2" data-name="ai icon 2">
+      <path class="cls-1" d="M36.34 30.67h-4.16L27.9 45.38h3.29l1-3.78h4l1.08 3.78h3.41zm-3.7 8.44l.83-3.11c.23-.85.44-2 .64-2.83.2.87.45 2 .7 2.83l.87 3.12zM45.58 31.74a1.62 1.62 0 0 1-1.7 1.66 1.67 1.67 0 0 1 0-3.34 1.62 1.62 0 0 1 1.7 1.68z"/>
+      <path fill="none" d="M42.32 34.71h3.16v10.67h-3.16z"/>
+      <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".75" d="M37.3.53L74.07 37.3 37.3 74.07.53 37.3z"/>
+    </g>
+  </g>
+</svg>

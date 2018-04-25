@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.6 74.6">
+  <defs>
+    <style>
+      .cls-1{fill:#fff;fill-rule:evenodd}
+    </style>
+  </defs>
+  <g id="sketch" data-name="sketch">
+    <g id="sketch-2" data-name="sketch 2">
+      <path class="cls-1" d="M31.68 38.62h11.24l-5.53 10.35-5.71-10.35zM27.75 36.1l2.34 2 5.55 9.26-7.89-11.26zM44.68 38.1l2.33-2-7.88 11.26 5.55-9.26zM33.71 33.05l7.06.02 2.43 4.23H31.35l2.36-4.25zM26.38 33.98l2.67-3.04 3.58 1.82-2.56 4.02-3.69-2.8zM41.89 32.76l3.82-1.82 2.68 3.04-3.8 2.88-2.7-4.1zM30.25 30.29l3.55-1.6h7.23l3.56 1.6-3.57 1.57h-7.23l-3.54-1.57z"/>
+      <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".75" d="M37.3.53L74.07 37.3 37.3 74.07.53 37.3z"/>
+    </g>
+  </g>
+</svg>
