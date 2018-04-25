@@ -102,7 +102,7 @@ body {
         width: 50%;
         margin-right: 65px; }
         body .site-wrapper .ui__illustration-svg {
-          width: 412px; }
+          width: 70%; }
       body .site-wrapper .ui__info {
         display: flex;
         align-content: center;
@@ -114,15 +114,15 @@ body {
           width: 100%;
           font-size: 42px;
           font-weight: 600;
-          letter-spacing: 10.80px; }
+          letter-spacing: 10.80px;
+          line-height: 50px; }
         body .site-wrapper .ui__info__desc {
-          width: 400px;
+          width: 65%;
           margin: 20px 0;
           font-size: 12px;
           font-weight: 100;
           letter-spacing: .5px;
-          line-height: 30px;
-          width: 400px; }
+          line-height: 30px; }
         body .site-wrapper .ui__info__cta {
           display: flex;
           align-items: center;
@@ -150,7 +150,7 @@ body {
         width: 50%;
         margin-right: 65px; }
         body .site-wrapper .illustration__graphic-svg {
-          width: 453px; }
+          width: 75%; }
       body .site-wrapper .illustration__info {
         display: flex;
         align-content: center;
@@ -162,15 +162,15 @@ body {
           width: 100%;
           font-size: 42px;
           font-weight: 600;
-          letter-spacing: 10.80px; }
+          letter-spacing: 10.80px;
+          line-height: 50px; }
         body .site-wrapper .illustration__info__desc {
-          width: 400px;
+          width: 65%;
           margin: 20px 0;
           font-size: 12px;
           font-weight: 100;
           letter-spacing: .5px;
-          line-height: 30px;
-          width: 400px; }
+          line-height: 30px; }
         body .site-wrapper .illustration__info__cta {
           display: flex;
           align-items: center;
@@ -198,7 +198,7 @@ body {
         width: 50%;
         margin-right: 65px; }
         body .site-wrapper .motion__graphic-svg {
-          width: 417px; }
+          width: 71%; }
       body .site-wrapper .motion__info {
         display: flex;
         align-content: center;
@@ -210,15 +210,15 @@ body {
           width: 100%;
           font-size: 42px;
           font-weight: 600;
-          letter-spacing: 10.80px; }
+          letter-spacing: 10.80px;
+          line-height: 50px; }
         body .site-wrapper .motion__info__desc {
-          width: 400px;
+          width: 65%;
           margin: 20px 0;
           font-size: 12px;
           font-weight: 100;
           letter-spacing: .5px;
-          line-height: 30px;
-          width: 400px; }
+          line-height: 30px; }
         body .site-wrapper .motion__info__cta {
           display: flex;
           align-items: center;
@@ -233,3 +233,39 @@ body {
           body .site-wrapper .motion__info__cta-link {
             color: #BF4D1B;
             text-decoration: none; }
+    body .site-wrapper .about {
+      display: flex;
+      justify-content: center;
+      background-color: #273575;
+      padding-top: 100px; }
+      body .site-wrapper .about__info {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 80px;
+        margin-right: 30px;
+        width: 50%; }
+        body .site-wrapper .about__info__title {
+          color: #273575;
+          font-size: 42px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          letter-spacing: 10px;
+          padding-bottom: 20px;
+          text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
+        body .site-wrapper .about__info__desc {
+          font-size: 12px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 100;
+          letter-spacing: 0.5px;
+          line-height: 30px;
+          width: 450px; }
+      body .site-wrapper .about__portrait {
+        width: 50%;
+        height: 100vh;
+        margin-left: 30px;
+        background: url(../assets/portrait.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        margin-right: 50px; }
