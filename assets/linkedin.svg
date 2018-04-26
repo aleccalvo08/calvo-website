@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.67 74.67">
+  <defs>
+    <style>
+      .linkedin-1{fill:#fff;fill-rule:evenodd}
+    </style>
+  </defs>
+  <g id="linkedin_2" data-name="linkedin 2">
+    <g id="linkedin_1-2" data-name="linkedin 1">
+      <path class="linkedin-1" d="M31.59 28.83a1.76 1.76 0 1 0 1.76 1.75 1.75 1.75 0 0 0-1.76-1.75z"/>
+      <path fill="#fff" d="M29.84 33.19h3.52v9.64h-3.52z"/>
+      <path class="linkedin-1" d="M41.62 33.19c-2.61 0-3 1.57-3 1.57v-1.55h-3.49v9.62h3.53v-5.25s0-1.76 1.5-1.76c.84 0 1.15.78 1.15 1.76v5.25h3.53v-5.25c0-2.74-1.21-4.39-3.22-4.39z"/>
+      <path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".8" d="M74.103 37.34l-36.77 36.77L.563 37.34 37.334.57z"/>
+    </g>
+  </g>
+</svg>
