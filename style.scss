@@ -36,6 +36,11 @@ body {
         width: 60px;
         cursor: pointer;
         right: 50px;
+
+        @media (max-width: 700px){
+          top: 20px;
+          right: 20px;
+        }
       }
     }
 
@@ -56,6 +61,11 @@ body {
         &-title {
           padding: 10px;
           width: 746px;
+
+          @media (max-width: 700px) {
+            width: 282px;
+            padding-bottom: 0;
+          }
         }
 
         &-subtitle {
@@ -66,6 +76,11 @@ body {
           font-weight: 500;
           font-family: $montserrat;
           text-align: center;
+
+          @media (max-width: 700px) {
+            font-size: 10px;
+            letter-spacing: 2px;
+          }
         }
       }
 
@@ -81,6 +96,7 @@ body {
           margin-bottom: 45px;
           display: flex;
           justify-content: center;
+
           &__icon{
             width: 50px;
             margin-right: 30px;
@@ -99,6 +115,37 @@ body {
           letter-spacing: -.5px;
           text-align: center;
         }
+
+        @media (max-width: 700px){
+          display: none;
+        }
+      }
+
+      &__app-mobile {
+        display: none;
+
+        @media (max-width: 700px){
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding-bottom: 100px;
+
+          &__svg{
+            width: 74px;
+            padding: 35px 0;
+          }
+
+          &__desc{
+            width: 100%;
+            color: $orange;
+            font-family: 'Didot';
+            font-weight: bold;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            text-align: center;
+          }
+        }
+
       }
       &__scroll{
         display: flex;
@@ -127,6 +174,10 @@ body {
       left: 50px;
       bottom: 50px;
 
+      @media (max-width: 700px) {
+        display: none;
+      }
+
       &__page{
         font-size: 30px;
         font-family: "Didot";
@@ -140,11 +191,22 @@ body {
       align-items: center;
       margin: 250px 0;
 
+      @media (max-width: 700px) {
+          flex-wrap: wrap;
+          margin: 150px 0;
+      }
+
       &__illustration {
         display: flex;
         justify-content: flex-end;
         width: 50%;
         margin-right: 65px;
+
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+        }
 
         &-svg{
           width: 70%;
@@ -159,6 +221,13 @@ body {
         margin-left: 65px;
         font-family: $montserrat;
 
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+          padding-top: 40px;
+        }
+
         &__title {
           width: 100%;
           font-size: 42px;
@@ -166,6 +235,12 @@ body {
           letter-spacing: 10.80px;
           line-height: 50px;
           word-wrap: break-word;
+
+          @media (max-width: 700px){
+            font-size: 28px;
+            letter-spacing: 2.3px;
+            text-align: center;
+          }
         }
 
         &__desc {
@@ -175,6 +250,11 @@ body {
           font-weight: 100;
           letter-spacing: .5px;
           line-height: 30px;
+
+          @media(max-width: 700px) {
+            width: 70%;
+            text-align: center;
+          }
         }
 
         &__cta {
@@ -185,6 +265,10 @@ body {
           font-size: 14px;
           font-weight: 600;
           letter-spacing: 5px;
+
+          @media(max-width: 700px) {
+            justify-content: center;
+          }
 
           &-svg {
             width: 35px;
@@ -206,11 +290,22 @@ body {
       margin: 250px 0;
       padding-top: 100px;
 
+      @media (max-width: 700px) {
+          flex-wrap: wrap;
+          margin: 150px 0;
+      }
+
       &__graphic {
         display: flex;
         justify-content: flex-end;
         width: 50%;
         margin-right: 65px;
+
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+        }
 
         &-svg{
           width: 75%;
@@ -225,6 +320,13 @@ body {
         margin-left: 65px;
         font-family: $montserrat;
 
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+          padding-top: 40px;
+        }
+
         &__title {
           width: 100%;
           font-size: 42px;
@@ -232,6 +334,12 @@ body {
           letter-spacing: 10.80px;
           line-height: 50px;
           word-wrap: break-word;
+
+          @media (max-width: 700px){
+            font-size: 28px;
+            letter-spacing: 2.3px;
+            text-align: center;
+          }
         }
 
         &__desc {
@@ -241,6 +349,11 @@ body {
           font-weight: 100;
           letter-spacing: .5px;
           line-height: 30px;
+
+          @media(max-width: 700px) {
+            width: 68%;
+            text-align: center;
+          }
         }
 
         &__cta {
@@ -251,6 +364,10 @@ body {
           font-size: 14px;
           font-weight: 600;
           letter-spacing: 5px;
+
+          @media(max-width: 700px) {
+            justify-content: center;
+          }
 
           &-svg {
             width: 35px;
@@ -272,11 +389,22 @@ body {
       margin: 250px 0;
       padding-top: 100px;
 
+      @media (max-width: 700px) {
+          flex-wrap: wrap;
+          margin: 150px 0;
+      }
+
       &__graphic {
         display: flex;
         justify-content: flex-end;
         width: 50%;
         margin-right: 65px;
+
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+        }
 
         &-svg{
           width: 71%;
@@ -291,6 +419,14 @@ body {
         margin-left: 65px;
         font-family: $montserrat;
 
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+          padding-top: 40px;
+        }
+
+
         &__title {
           width: 100%;
           font-size: 42px;
@@ -298,6 +434,12 @@ body {
           letter-spacing: 10.80px;
           line-height: 50px;
           word-wrap: break-word;
+
+          @media (max-width: 700px){
+            font-size: 28px;
+            letter-spacing: 2.3px;
+            text-align: center;
+          }
         }
 
         &__desc {
@@ -307,6 +449,11 @@ body {
           font-weight: 100;
           letter-spacing: .5px;
           line-height: 30px;
+
+          @media(max-width: 700px) {
+            width: 68%;
+            text-align: center;
+          }
         }
 
         &__cta {
@@ -317,6 +464,10 @@ body {
           font-size: 14px;
           font-weight: 600;
           letter-spacing: 5px;
+
+          @media(max-width: 700px) {
+            justify-content: center;
+          }
 
           &-svg {
             width: 35px;
@@ -337,6 +488,12 @@ body {
       background-color: #273575;
       padding-top: 120px;
 
+      @media(max-width: 700px){
+        flex-wrap:wrap;
+        padding: 0 40px;
+        padding-top: 120px;
+      }
+
       &__info {
         display: flex;
         flex-wrap: wrap;
@@ -345,6 +502,12 @@ body {
         margin-right: 30px;
         width: 50%;
         padding-bottom: 45px;
+
+        @media (max-width: 700px){
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+        }
 
         &__title {
           color: #273575;
@@ -358,6 +521,16 @@ body {
             1px -1px 0 #fff,
             -1px 1px 0 #fff,
              1px 1px 0 #fff;
+
+          @media(max-width: 700px) {
+            font-size: 38px;
+            letter-spacing: 5px;
+            text-shadow:
+             -0.5px -0.5px 0 #fff,
+              0.5px -0.5px 0 #fff,
+              -0.5px 0.5px 0 #fff,
+               0.5px 0.5px 0 #fff;
+          }
         }
 
         &__desc {
@@ -368,6 +541,10 @@ body {
           line-height: 30px;
           width: 450px;
           padding-bottom: 60px;
+
+          @media(max-width: 700px){
+            text-align: center;
+          }
         }
 
         &__icons {
@@ -378,6 +555,26 @@ body {
 
             &-group {
                 width: 52px;
+
+                @media (max-width: 700px){
+                  width: 60px;
+                  margin-left: 20px;
+                }
+            }
+
+            @media (max-width: 700px){
+              justify-content: center;
+              flex-wrap: wrap;
+              width: 90%;
+              padding-bottom: 0;
+
+              &-mobile {
+                margin-left: 0;
+              }
+
+              &-behance {
+                margin-left: 0;
+              }
             }
         }
         &__email {
@@ -400,7 +597,24 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         margin-right: 50px;
+
+        @media (max-width: 1200px){
+          margin-right: 0;
+        }
+
+        @media (max-width: 700px){
+          width: 100%;
+          height: 330px;
+          margin: 0;
+          background-size: contain;
+        }
       }
     }
+  }
+}
+
+.breakspace {
+  @media (max-width: 700px){
+    display: none;
   }
 }
