@@ -12,6 +12,33 @@ $blue: #273575;
 $montserrat: 'Montserrat', sans-serif;
 
 
+//keyframes
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0px);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+@keyframes pulse {
+  0%{
+    r: 5;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    r: 30;
+  }
+}
+
 body {
   background-color: $black;
   color: white;
@@ -249,6 +276,7 @@ body {
         }
         &-arrow{
           width: 17px;
+          animation: scrollDown 1.5s ease infinite;
         }
       }
     }
@@ -701,4 +729,8 @@ body {
   @media (max-width: 700px){
     display: none;
   }
+}
+
+.circle-pulse {
+  animation: pulse 1.75s ease infinite;
 }

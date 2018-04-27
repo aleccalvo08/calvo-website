@@ -3,6 +3,23 @@
   font-family: "Didot";
   src: url("assets/Didot.ttc"); }
 
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0px); }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(15px); } }
+
+@keyframes pulse {
+  0% {
+    r: 5; }
+  90% {
+    opacity: 0; }
+  100% {
+    r: 30; } }
+
 body {
   background-color: #1E1E1E;
   color: white;
@@ -161,7 +178,8 @@ body {
           letter-spacing: 7.5px;
           text-align: center; }
         body .site-wrapper .hero__scroll-arrow {
-          width: 17px; }
+          width: 17px;
+          animation: scrollDown 1.5s ease infinite; }
     body .site-wrapper .footer {
       position: fixed;
       left: 50px;
@@ -497,3 +515,6 @@ body {
 @media (max-width: 700px) {
   .breakspace {
     display: none; } }
+
+.circle-pulse {
+  animation: pulse 1.75s ease infinite; }
