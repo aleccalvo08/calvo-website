@@ -37,6 +37,16 @@ body {
         cursor: pointer;
         right: 50px;
 
+        .menu-ani {
+          transition-duration: .35s;
+          transition-timing-function: ease-out;
+        }
+
+        &:hover .menu-ani {
+          fill: #BF4D1B;
+          stroke-width: 0px;
+        }
+
         @media (max-width: 700px){
           top: 20px;
           right: 20px;
@@ -93,9 +103,9 @@ body {
 
         &-icons{
           width: 100%;
-          margin-bottom: 45px;
           display: flex;
           justify-content: center;
+          flex-wrap: wrap;
 
           &__icon{
             width: 50px;
@@ -104,16 +114,90 @@ body {
             &:last-of-type{
               margin-right: 0;
             }
+
+            .app-ani {
+              transition: 0.25s;
+              transition-timing-function: ease;
+            }
+
+            &:hover .app-ani {
+              fill: $orange;
+              stroke-width: 0;
+            }
           }
         }
+
+        .ogdesc {
+          transition: .5s;
+        }
+
+        .hero__app-icons:hover > .ogdesc {
+          opacity: 0;
+        }
+
+        .hero__app-icons__icon:hover ~ .ogdesc {
+          display: none;
+        }
+
+        .photoshop:hover ~ .desc1{
+          display: inline;
+        }
+
+        .illustrator:hover ~ .desc2{
+          display: inline;
+        }
+
+        .aftereffect:hover ~ .desc3{
+          display: inline;
+        }
+
+        .sketch:hover ~ .desc4{
+          display: inline;
+        }
+
+        .atom:hover ~ .desc5{
+          display: inline;
+        }
+
+        .drawing:hover ~ .desc6{
+          display: inline;
+        }
+
+
         &-desc{
+          width: 100%;
           margin: 0;
+          margin-top: 45px;
           color: $orange;
           font-size: 26px;
           font-weight: 700;
           font-family: "Didot";
           letter-spacing: -.5px;
           text-align: center;
+        }
+
+        .desc1{
+          display: none;
+        }
+
+        .desc2{
+          display: none;
+        }
+
+        .desc3{
+          display: none;
+        }
+
+        .desc4{
+          display: none;
+        }
+
+        .desc5{
+          display: none;
+        }
+
+        .desc6{
+          display: none;
         }
 
         @media (max-width: 700px){

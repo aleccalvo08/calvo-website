@@ -22,6 +22,12 @@ body {
         width: 60px;
         cursor: pointer;
         right: 50px; }
+        body .site-wrapper .header__menu .menu-ani {
+          transition-duration: .35s;
+          transition-timing-function: ease-out; }
+        body .site-wrapper .header__menu:hover .menu-ani {
+          fill: #BF4D1B;
+          stroke-width: 0px; }
         @media (max-width: 700px) {
           body .site-wrapper .header__menu {
             top: 20px;
@@ -65,22 +71,60 @@ body {
         padding: 60px 0; }
         body .site-wrapper .hero__app-icons {
           width: 100%;
-          margin-bottom: 45px;
           display: flex;
-          justify-content: center; }
+          justify-content: center;
+          flex-wrap: wrap; }
           body .site-wrapper .hero__app-icons__icon {
             width: 50px;
             margin-right: 30px; }
             body .site-wrapper .hero__app-icons__icon:last-of-type {
               margin-right: 0; }
+            body .site-wrapper .hero__app-icons__icon .app-ani {
+              transition: 0.25s;
+              transition-timing-function: ease; }
+            body .site-wrapper .hero__app-icons__icon:hover .app-ani {
+              fill: #BF4D1B;
+              stroke-width: 0; }
+        body .site-wrapper .hero__app .ogdesc {
+          transition: .5s; }
+        body .site-wrapper .hero__app .hero__app-icons:hover > .ogdesc {
+          opacity: 0; }
+        body .site-wrapper .hero__app .hero__app-icons__icon:hover ~ .ogdesc {
+          display: none; }
+        body .site-wrapper .hero__app .photoshop:hover ~ .desc1 {
+          display: inline; }
+        body .site-wrapper .hero__app .illustrator:hover ~ .desc2 {
+          display: inline; }
+        body .site-wrapper .hero__app .aftereffect:hover ~ .desc3 {
+          display: inline; }
+        body .site-wrapper .hero__app .sketch:hover ~ .desc4 {
+          display: inline; }
+        body .site-wrapper .hero__app .atom:hover ~ .desc5 {
+          display: inline; }
+        body .site-wrapper .hero__app .drawing:hover ~ .desc6 {
+          display: inline; }
         body .site-wrapper .hero__app-desc {
+          width: 100%;
           margin: 0;
+          margin-top: 45px;
           color: #BF4D1B;
           font-size: 26px;
           font-weight: 700;
           font-family: "Didot";
           letter-spacing: -.5px;
           text-align: center; }
+        body .site-wrapper .hero__app .desc1 {
+          display: none; }
+        body .site-wrapper .hero__app .desc2 {
+          display: none; }
+        body .site-wrapper .hero__app .desc3 {
+          display: none; }
+        body .site-wrapper .hero__app .desc4 {
+          display: none; }
+        body .site-wrapper .hero__app .desc5 {
+          display: none; }
+        body .site-wrapper .hero__app .desc6 {
+          display: none; }
         @media (max-width: 700px) {
           body .site-wrapper .hero__app {
             display: none; } }
