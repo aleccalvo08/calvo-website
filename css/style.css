@@ -45,6 +45,10 @@ body {
         body .site-wrapper .header__menu:hover .menu-ani {
           fill: #BF4D1B;
           stroke-width: 0px; }
+        body .site-wrapper .header__menu .menu-words {
+          transition: .35s; }
+        body .site-wrapper .header__menu:hover .menu-words {
+          fill: #000; }
         @media (max-width: 700px) {
           body .site-wrapper .header__menu {
             top: 20px;

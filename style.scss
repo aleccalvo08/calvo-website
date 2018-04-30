@@ -74,6 +74,14 @@ body {
           stroke-width: 0px;
         }
 
+        .menu-words {
+          transition: .35s;
+        }
+
+        &:hover .menu-words {
+          fill: #000;
+        }
+
         @media (max-width: 700px){
           top: 20px;
           right: 20px;
