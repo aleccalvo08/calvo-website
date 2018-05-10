@@ -18,6 +18,7 @@ gulp.task('build-css', function() {
 
 gulp.task('watch', function() {
   gulp.watch("style.scss", ['build-css', reload])
+  gulp.watch("js/main.js").on('change', reload)
   gulp.watch('*.html').on('change', reload)
 })
 

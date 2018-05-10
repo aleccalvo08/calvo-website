@@ -39,6 +39,33 @@ $montserrat: 'Montserrat', sans-serif;
   }
 }
 
+@keyframes uiAni {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ilAni {
+  0% {
+    stroke-dashoffset: 1050;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes moAni {
+  0% {
+    stroke-dashoffset: 1150;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
 body {
   background-color: $black;
   color: white;
@@ -63,6 +90,7 @@ body {
         width: 60px;
         cursor: pointer;
         right: 50px;
+        z-index: 2;
 
         .menu-ani {
           transition-duration: .35s;
@@ -85,6 +113,82 @@ body {
         @media (max-width: 700px){
           top: 20px;
           right: 20px;
+        }
+      }
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100vh;
+      background: $orange;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__column1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 40%;
+        
+        h1{
+          font-family: $montserrat;
+          font-weight: 700;
+          font-size: 205px;
+          letter-spacing: 25px;
+        }
+
+        .nu{
+          letter-spacing: 30px;
+        }
+      }
+
+      &__column2{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 40%;
+
+        a{
+          color: white;
+          font-family: $montserrat;
+          font-size: 32px;
+          font-weight: 100;
+          letter-spacing: 6.15px;
+          text-decoration: none;
+        }
+
+        &-btn1 {
+          padding: 70px 60px;
+          border: 1px solid white;
+          margin-right: 30px;
+          margin-bottom: 20px;
+          transform: scale(.85);
+        }
+        &-btn2 {
+          padding: 70px 50px;
+          border: 1px solid white;
+          margin-left: 30px;
+          margin-bottom: 20px;
+          transform: scale(.85);
+        }
+        &-btn3 {
+          padding: 70px 64px;
+          border: 1px solid white;
+          margin-right: 30px;
+          margin-top: 20px;
+          transform: scale(.85);
+        }
+        &-btn4 {
+          padding: 70px 45px;
+          border: 1px solid white;
+          margin-left: 30px;
+          margin-top: 20px;
+          transform: scale(.85);
         }
       }
     }
@@ -157,6 +261,11 @@ body {
 
             &:hover .app-ani {
               fill: $orange;
+              stroke-width: 0;
+            }
+
+            &:hover .app-ani2 {
+              fill: $black;
               stroke-width: 0;
             }
           }
@@ -330,6 +439,11 @@ body {
 
         &-svg{
           width: 70%;
+
+          svg {
+            stroke-dashoffset: 1000;
+            stroke-dasharray: 1000;
+          }
         }
       }
 
@@ -429,6 +543,11 @@ body {
 
         &-svg{
           width: 75%;
+
+          svg {
+            stroke-dashoffset: 1050;
+            stroke-dasharray: 1050;
+          }
         }
       }
 
@@ -528,6 +647,11 @@ body {
 
         &-svg{
           width: 71%;
+
+          svg {
+            stroke-dashoffset: 1150;
+            stroke-dasharray: 1150;
+          }
         }
       }
 
@@ -741,4 +865,16 @@ body {
 
 .circle-pulse {
   animation: pulse 1.75s ease infinite;
+}
+
+.ui-ani2 {
+  animation: uiAni 2s ease forwards;
+}
+
+.il-ani2 {
+  animation: ilAni 2s ease forwards;
+}
+
+.mo-ani2 {
+  animation: moAni 2s ease forwards;
 }
