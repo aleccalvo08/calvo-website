@@ -90,7 +90,6 @@ body {
         width: 60px;
         cursor: pointer;
         right: 50px;
-        z-index: 2;
 
         .menu-ani {
           transition-duration: .35s;
@@ -115,11 +114,25 @@ body {
           right: 20px;
         }
       }
+
+      &__home{
+        position: fixed;
+        width: 60px;
+        cursor: pointer;
+        right: 60px;
+        z-index: 2;
+        display: none;
+
+        @media (max-width: 700px){
+          top: 20px;
+          right: 30px;
+        }
+      }
     }
 
     .overlay {
       width: 100%;
-      height: 100vh;
+      height: 0;
       background: $orange;
       position: fixed;
       top: 0;
@@ -127,13 +140,20 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+      transition: 500ms ease;
 
       &__column1{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 40%;
-        
+
+        @media (max-width: 700px){
+          display: none;
+        }
+
         h1{
           font-family: $montserrat;
           font-weight: 700;
@@ -146,12 +166,33 @@ body {
         }
       }
 
+      &__line {
+        border-left: 1px solid white;
+        width: 1px;
+        height: 300px;
+        margin-left: -30px;
+
+        @media (max-width: 700px){
+          display: none;
+        }
+      }
+
       &__column2{
         display: flex;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
         width: 40%;
+
+        @media (max-width: 700px){
+
+          width: 100%;
+
+          a {
+            margin: 0;
+            transform: scale(.75);
+          }
+        }
 
         a{
           color: white;
@@ -160,6 +201,11 @@ body {
           font-weight: 100;
           letter-spacing: 6.15px;
           text-decoration: none;
+          transition: 750ms ease;
+
+          &:hover {
+            transform: scale(.75);
+          }
         }
 
         &-btn1 {
@@ -516,12 +562,35 @@ body {
         }
       }
     }
+
+    .uiworks{
+      width: 100%;
+      height: 0;
+      background-color: $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 500ms ease;
+      overflow: hidden;
+
+      div{
+        background-color: $blue;
+        width: 333px;
+        height: 222px;
+        margin-left: 50px;
+        box-shadow: -18px 21px 33px rgba(0, 0, 0, 0.2);
+
+        &:first-of-type{
+          margin-left: 0;
+        }
+      }
+
+    }
     .illustration {
       display: flex;
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin: 250px 0;
       padding-top: 100px;
 
       @media (max-width: 700px) {
@@ -852,6 +921,33 @@ body {
           margin: 0;
           background-size: contain;
         }
+      }
+    }
+    .last{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      position: absolute;
+      top: 3600px;
+      font-family: $montserrat;
+      font-weight: 100;
+      font-size: 12px;
+      letter-spacing: 2px;
+
+      @media (max-width: 700px){
+
+        display: none;
+      }
+
+      &-email{
+        position: relative;
+        left: 75px;
+
+      }
+      &-copyright{
+        position: relative;
+        right: 75px;
       }
     }
   }

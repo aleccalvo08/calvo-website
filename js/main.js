@@ -48,4 +48,40 @@ $(document).ready(function(){
     offset: '40%'
   })
 
+  var bioWaypoint = $('.about').waypoint(function(direction){
+    if (direction==="down"){
+      $('.footer__page').text("")
+      console.log("what happened")
+    }
+    else {
+      footerNumber = i+3
+      $('.footer__page').text("0"+footerNumber--)
+    }
+  }, {
+    offset: '30%'
+  })
+
+  $('.header__menu').click(function(){
+    $('.overlay').css("height","100vh");
+    $('html').css("overflow","hidden");
+    $('.header__home').css("display", "block");
+  })
+
+  $('.header__home').click(function(){
+    $('.overlay').css("height","0");
+    $('html').css("overflow","auto");
+    $('.header__home').css("display","none");
+  })
+
+  $('.section-links').click(function(){
+    $('.overlay').css("height","0");
+    $('html').css("overflow","auto");
+    $('.header__home').css("display","none");
+  })
+
+  $('.ui__info__cta-link').click(function(){
+    event.preventDefault();
+    $('.uiworks').css("height","100vh");
+  })
+
 });
