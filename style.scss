@@ -73,6 +73,7 @@ body {
 
   .site-wrapper {
     margin: 0 auto;
+    position: relative;
 
     .header {
       margin-top: 50px;
@@ -563,15 +564,30 @@ body {
       }
     }
 
+    .uiworks-hider {
+      display: none;
+    }
+
     .uiworks{
       width: 100%;
-      height: 0;
+      height: 100vh;
+      background: url('../assets/ui-background.png');
+      background-size: auto;
+      background-repeat: no-repeat;
       background-color: $orange;
+      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: 500ms ease;
       overflow: hidden;
+
+      @media (max-width: 700px){
+        height: 989px;
+        flex-wrap: wrap;
+        align-content: center;
+        background-image: none;
+      }
 
       div{
         background-color: $blue;
@@ -579,6 +595,10 @@ body {
         height: 222px;
         margin-left: 50px;
         box-shadow: -18px 21px 33px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 700px){
+            margin: 20px 0;
+        }
 
         &:first-of-type{
           margin-left: 0;
@@ -689,6 +709,50 @@ body {
         }
       }
     }
+
+    .ilworks-hider {
+      display: none;
+    }
+
+    .ilworks{
+      width: 100%;
+      height: 100vh;
+      background: url('../assets/il-background.png');
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 500ms ease;
+      overflow: hidden;
+      margin-top: 250px;
+
+      @media (max-width: 700px){
+        height: 989px;
+        flex-wrap: wrap;
+        align-content: center;
+        background-image: none;
+      }
+
+      div{
+        background-color: $blue;
+        width: 333px;
+        height: 222px;
+        margin-left: 50px;
+        box-shadow: -18px 21px 33px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 700px){
+            margin: 20px 0;
+        }
+
+        &:first-of-type{
+          margin-left: 0;
+        }
+      }
+    }
+
     .motion {
       display: flex;
       justify-content: center;
@@ -795,6 +859,48 @@ body {
       }
     }
 
+    .moworks-hider {
+      display: none;
+    }
+
+    .moworks{
+      width: 100%;
+      height: 100vh;
+      background: url('../assets/mg-background.png');
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 500ms ease;
+      overflow: hidden;
+
+      @media (max-width: 700px){
+        height: 989px;
+        flex-wrap: wrap;
+        align-content: center;
+        background-image: none;
+      }
+
+      div{
+        background-color: $blue;
+        width: 333px;
+        height: 222px;
+        margin-left: 50px;
+        box-shadow: -18px 21px 33px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 700px){
+            margin: 20px 0;
+        }
+
+        &:first-of-type{
+          margin-left: 0;
+        }
+      }
+    }
+
     .about {
       display: flex;
       justify-content: center;
@@ -838,11 +944,9 @@ body {
           @media(max-width: 700px) {
             font-size: 38px;
             letter-spacing: 5px;
-            text-shadow:
-             -0.5px -0.5px 0 #fff,
-              0.5px -0.5px 0 #fff,
-              -0.5px 0.5px 0 #fff,
-               0.5px 0.5px 0 #fff;
+            stroke-width: .5px;
+            stroke: #fff;
+            opacity: .5;
           }
         }
 
@@ -868,6 +972,18 @@ body {
 
             &-group {
                 width: 52px;
+
+                svg {
+
+                  .abticon-border {
+                    transition: 250ms ease;
+                    transform-origin: center;
+                  }
+
+                  &:hover .abticon-border {
+                    transform: rotateZ(90deg);
+                  }
+                }
 
                 @media (max-width: 700px){
                   width: 60px;
@@ -929,7 +1045,7 @@ body {
       justify-content: space-between;
       flex-wrap: nowrap;
       position: absolute;
-      top: 3600px;
+      bottom: 10px;
       font-family: $montserrat;
       font-weight: 100;
       font-size: 12px;
