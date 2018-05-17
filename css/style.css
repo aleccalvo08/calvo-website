@@ -38,6 +38,26 @@
   100% {
     stroke-dashoffset: 0; } }
 
+@keyframes titleAni {
+  0% {
+    stroke-dashoffset: 400px; }
+  100% {
+    stroke-dashoffset: 0px; } }
+
+@keyframes opacityFadein {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+@keyframes opacityFadein2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 body {
   background-color: #1E1E1E;
   color: white;
@@ -57,7 +77,8 @@ body {
         position: fixed;
         width: 60px;
         cursor: pointer;
-        right: 50px; }
+        right: 50px;
+        z-index: 1; }
         body .site-wrapper .header__menu .menu-ani {
           transition-duration: .35s;
           transition-timing-function: ease-out; }
@@ -78,11 +99,13 @@ body {
         cursor: pointer;
         right: 60px;
         z-index: 2;
-        display: none; }
+        display: none;
+        opacity: 0;
+        animation: opacityFadein2 1000ms 250ms forwards; }
         @media (max-width: 700px) {
           body .site-wrapper .header__home {
             top: 20px;
-            right: 30px; } }
+            right: 20px; } }
     body .site-wrapper .overlay {
       width: 100%;
       height: 0;
@@ -171,7 +194,8 @@ body {
       align-items: center;
       align-content: space-around;
       flex-wrap: wrap;
-      padding-top: 160px; }
+      padding-top: 160px;
+      animation: opacityFadein 1000ms forwards; }
       body .site-wrapper .hero__main {
         display: flex;
         justify-content: center;
@@ -180,6 +204,10 @@ body {
         body .site-wrapper .hero__main-title {
           padding: 10px;
           width: 746px; }
+          body .site-wrapper .hero__main-title svg {
+            stroke-dasharray: 400px;
+            stroke-dashoffset: 400px;
+            animation: titleAni 3000ms ease 1000ms forwards; }
           @media (max-width: 700px) {
             body .site-wrapper .hero__main-title {
               width: 282px;
@@ -227,15 +255,29 @@ body {
           opacity: 0; }
         body .site-wrapper .hero__app .hero__app-icons__icon:hover ~ .ogdesc {
           display: none; }
+        body .site-wrapper .hero__app .hero__app-icons__icon:hover ~ .appname {
+          display: none; }
+        body .site-wrapper .hero__app .photoshop:hover ~ .appname1 {
+          display: inline; }
         body .site-wrapper .hero__app .photoshop:hover ~ .desc1 {
+          display: inline; }
+        body .site-wrapper .hero__app .illustrator:hover ~ .appname2 {
           display: inline; }
         body .site-wrapper .hero__app .illustrator:hover ~ .desc2 {
           display: inline; }
+        body .site-wrapper .hero__app .aftereffect:hover ~ .appname3 {
+          display: inline; }
         body .site-wrapper .hero__app .aftereffect:hover ~ .desc3 {
+          display: inline; }
+        body .site-wrapper .hero__app .sketch:hover ~ .appname4 {
           display: inline; }
         body .site-wrapper .hero__app .sketch:hover ~ .desc4 {
           display: inline; }
+        body .site-wrapper .hero__app .atom:hover ~ .appname5 {
+          display: inline; }
         body .site-wrapper .hero__app .atom:hover ~ .desc5 {
+          display: inline; }
+        body .site-wrapper .hero__app .drawing:hover ~ .appname6 {
           display: inline; }
         body .site-wrapper .hero__app .drawing:hover ~ .desc6 {
           display: inline; }
@@ -249,6 +291,25 @@ body {
           font-family: "Didot";
           letter-spacing: -.5px;
           text-align: center; }
+        body .site-wrapper .hero__app-desc2 {
+          margin-top: 30px;
+          font-size: 10px;
+          color: #BF4D1B;
+          font-family: "Montserrat", sans-serif;
+          letter-spacing: 5px;
+          text-transform: uppercase; }
+        body .site-wrapper .hero__app .appname1 {
+          display: none; }
+        body .site-wrapper .hero__app .appname2 {
+          display: none; }
+        body .site-wrapper .hero__app .appname3 {
+          display: none; }
+        body .site-wrapper .hero__app .appname4 {
+          display: none; }
+        body .site-wrapper .hero__app .appname5 {
+          display: none; }
+        body .site-wrapper .hero__app .appname6 {
+          display: none; }
         body .site-wrapper .hero__app .desc1 {
           display: none; }
         body .site-wrapper .hero__app .desc2 {
@@ -271,7 +332,7 @@ body {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            padding-bottom: 100px; }
+            padding-bottom: 70px; }
             body .site-wrapper .hero__app-mobile__svg {
               width: 74px;
               padding: 35px 0; }
@@ -282,12 +343,20 @@ body {
               font-weight: bold;
               font-size: 22px;
               letter-spacing: 0.5px;
+              text-align: center; }
+            body .site-wrapper .hero__app-mobile__desc2 {
+              padding-top: 20px;
+              color: #BF4D1B;
+              font-family: "Montserrat", sans-serif;
+              font-size: 12px;
+              letter-spacing: 2px;
               text-align: center; } }
       body .site-wrapper .hero__scroll {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin: 50px 0;
+        margin-top: 20px;
         align-content: space-between;
         height: 45px; }
         body .site-wrapper .hero__scroll-desc {
