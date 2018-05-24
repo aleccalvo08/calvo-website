@@ -198,8 +198,9 @@ body {
       animation: opacityFadein 1000ms forwards; }
       body .site-wrapper .hero__main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
         width: 100%; }
         body .site-wrapper .hero__main-title {
           padding: 10px;
@@ -802,6 +803,9 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         margin-right: 50px; }
+        @media (min-width: 1300px) {
+          body .site-wrapper .about__portrait {
+            background-size: contain; } }
         @media (max-width: 1200px) {
           body .site-wrapper .about__portrait {
             margin-right: 0; } }

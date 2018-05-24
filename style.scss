@@ -283,8 +283,10 @@ body {
 
       &__main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        // flex-wrap: wrap;
         width: 100%;
 
         &-title {
@@ -1131,6 +1133,10 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         margin-right: 50px;
+
+        @media (min-width: 1300px){
+          background-size: contain;
+        }
 
         @media (max-width: 1200px){
           margin-right: 0;
