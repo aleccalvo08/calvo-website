@@ -385,11 +385,13 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 250px 0; }
+      margin: 0;
+      margin-top: 200px;
+      margin-bottom: 50px; }
       @media (max-width: 700px) {
         body .site-wrapper .ui {
           flex-wrap: wrap;
-          margin: 150px 0; } }
+          margin-top: 100px; } }
       body .site-wrapper .ui__illustration {
         display: flex;
         justify-content: flex-end;
@@ -495,11 +497,12 @@ body {
       justify-content: center;
       align-items: center;
       align-content: center;
-      padding-top: 100px; }
+      margin-top: 200px;
+      margin-bottom: 50px; }
       @media (max-width: 700px) {
         body .site-wrapper .illustration {
           flex-wrap: wrap;
-          margin: 150px 0; } }
+          margin-top: 150px; } }
       body .site-wrapper .illustration__graphic {
         display: flex;
         justify-content: flex-end;
@@ -582,8 +585,7 @@ body {
       justify-content: center;
       align-items: center;
       transition: 500ms ease;
-      overflow: hidden;
-      margin-top: 250px; }
+      overflow: hidden; }
       @media (max-width: 700px) {
         body .site-wrapper .ilworks {
           height: 989px;
@@ -606,12 +608,13 @@ body {
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin: 250px 0;
-      padding-top: 100px; }
+      margin: 0;
+      margin-top: 200px;
+      margin-bottom: 50px; }
       @media (max-width: 700px) {
         body .site-wrapper .motion {
           flex-wrap: wrap;
-          margin: 150px 0; } }
+          margin-top: 150px; } }
       body .site-wrapper .motion__graphic {
         display: flex;
         justify-content: flex-end;
@@ -716,7 +719,8 @@ body {
       display: flex;
       justify-content: center;
       background-color: #273575;
-      padding-top: 120px; }
+      padding-top: 120px;
+      margin-top: 200px; }
       @media (max-width: 700px) {
         body .site-wrapper .about {
           flex-wrap: wrap;
