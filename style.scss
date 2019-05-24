@@ -227,6 +227,12 @@ body {
           }
         }
 
+        @media (min-width: 1500px){
+
+          width: 40%;
+
+        }
+
         a{
           color: white;
           font-family: $montserrat;
