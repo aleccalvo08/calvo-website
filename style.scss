@@ -66,6 +66,35 @@ $montserrat: 'Montserrat', sans-serif;
   }
 }
 
+@keyframes titleAni {
+  0% {
+    stroke-dashoffset: 400px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes opacityFadein {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes opacityFadein2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   background-color: $black;
   color: white;
@@ -91,6 +120,7 @@ body {
         width: 60px;
         cursor: pointer;
         right: 50px;
+        z-index: 1;
 
         .menu-ani {
           transition-duration: .35s;
@@ -123,10 +153,12 @@ body {
         right: 60px;
         z-index: 2;
         display: none;
+        opacity: 0;
+        animation: opacityFadein2 1000ms 250ms forwards;
 
         @media (max-width: 700px){
           top: 20px;
-          right: 30px;
+          right: 20px;
         }
       }
     }
@@ -195,6 +227,12 @@ body {
           }
         }
 
+        @media (min-width: 1500px){
+
+          width: 40%;
+
+        }
+
         a{
           color: white;
           font-family: $montserrat;
@@ -247,16 +285,25 @@ body {
       align-content: space-around;
       flex-wrap: wrap;
       padding-top: 160px;
+      animation: opacityFadein 1000ms forwards;
 
       &__main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        // flex-wrap: wrap;
         width: 100%;
 
         &-title {
           padding: 10px;
           width: 746px;
+
+          svg {
+            stroke-dasharray: 400px;
+            stroke-dashoffset: 400px;
+            animation: titleAni 3000ms ease 1000ms forwards;
+          }
 
           @media (max-width: 700px) {
             width: 282px;
@@ -330,7 +377,19 @@ body {
           display: none;
         }
 
+        .hero__app-icons__icon:hover ~ .appname {
+          display: none;
+        }
+
+        .photoshop:hover ~ .appname1{
+          display: inline;
+        }
+
         .photoshop:hover ~ .desc1{
+          display: inline;
+        }
+
+        .illustrator:hover ~ .appname2{
           display: inline;
         }
 
@@ -338,7 +397,15 @@ body {
           display: inline;
         }
 
+        .aftereffect:hover ~ .appname3{
+          display: inline;
+        }
+
         .aftereffect:hover ~ .desc3{
+          display: inline;
+        }
+
+        .sketch:hover ~ .appname4{
           display: inline;
         }
 
@@ -346,7 +413,15 @@ body {
           display: inline;
         }
 
+        .atom:hover ~ .appname5{
+          display: inline;
+        }
+
         .atom:hover ~ .desc5{
+          display: inline;
+        }
+
+        .drawing:hover ~ .appname6{
           display: inline;
         }
 
@@ -365,6 +440,34 @@ body {
           font-family: "Didot";
           letter-spacing: -.5px;
           text-align: center;
+        }
+
+        &-desc2 {
+          margin-top: 30px;
+          font-size: 10px;
+          color: $orange;
+          font-family: $montserrat;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+        }
+
+        .appname1 {
+          display: none;
+        }
+        .appname2 {
+          display: none;
+        }
+        .appname3 {
+          display: none;
+        }
+        .appname4 {
+          display: none;
+        }
+        .appname5 {
+          display: none;
+        }
+        .appname6 {
+          display: none;
         }
 
         .desc1{
@@ -403,7 +506,7 @@ body {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          padding-bottom: 100px;
+          padding-bottom: 70px;
 
           &__svg{
             width: 74px;
@@ -419,6 +522,15 @@ body {
             letter-spacing: 0.5px;
             text-align: center;
           }
+
+          &__desc2 {
+            padding-top: 20px;
+            color: $orange;
+            font-family: $montserrat;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-align: center;
+          }
         }
 
       }
@@ -427,6 +539,7 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         margin: 50px 0;
+        margin-top: 0px;
         align-content: space-between;
         height: 45px;
 
@@ -465,11 +578,13 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 250px 0;
+      margin: 0;
+      margin-top: 200px;
+      margin-bottom: 50px;
 
       @media (max-width: 700px) {
           flex-wrap: wrap;
-          margin: 150px 0;
+          margin-top: 100px;
       }
 
       &__illustration {
@@ -611,11 +726,13 @@ body {
       justify-content: center;
       align-items: center;
       align-content: center;
-      padding-top: 100px;
+      margin-top: 200px;
+      margin-bottom: 50px;
+
 
       @media (max-width: 700px) {
           flex-wrap: wrap;
-          margin: 150px 0;
+          margin-top: 150px;
       }
 
       &__graphic {
@@ -727,7 +844,6 @@ body {
       align-items: center;
       transition: 500ms ease;
       overflow: hidden;
-      margin-top: 250px;
 
       @media (max-width: 700px){
         height: 989px;
@@ -758,12 +874,13 @@ body {
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin: 250px 0;
-      padding-top: 100px;
+      margin: 0;
+      margin-top: 200px;
+      margin-bottom: 50px;
 
       @media (max-width: 700px) {
           flex-wrap: wrap;
-          margin: 150px 0;
+          margin-top: 150px;
       }
 
       &__graphic {
@@ -906,6 +1023,7 @@ body {
       justify-content: center;
       background-color: #273575;
       padding-top: 120px;
+      margin-top: 200px;
 
       @media(max-width: 700px){
         flex-wrap:wrap;
@@ -1026,6 +1144,10 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         margin-right: 50px;
+
+        @media (min-width: 1300px){
+          background-size: contain;
+        }
 
         @media (max-width: 1200px){
           margin-right: 0;
